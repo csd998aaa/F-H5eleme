@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+}
+
+@color: #2395ff;
+.container {
+    width: 6rem;
+    margin: 0 auto;
+    padding-top: .8rem;
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+
+.logo-bg {
+    background: url(../../assets/images/logo.png) no-repeat;
+    background-size: 100% 100%;
+    width: 146px;
+    height: 72px;
+    margin: 0 auto;
+}
+
+.login_sub {
+    padding-top: .8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    span {
+        color: @color;
+        font-weight: 700;
+        font-size: 14px;
+        border-bottom: 2px solid @color;
+        padding-bottom: 4px;
+    }
+}
+
+.form-box {
+    section {
+        margin-top: .24rem;
+        position: relative;
+        height: .96rem;
+        font-size: 14px;
+        background-color: #fff;
+        input {
+            width: 100%;
+            height: 100%;
+            left: 0;
+            padding: 0;
+            padding-left: .2rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            color: #333;
+            box-sizing: border-box;
+            font-size: inherit;
+            &:focus {
+                border-color: @color;
+                outline: none;
+            }
+        }
+        button {
+            color: #ccc;
+            padding: 0;
+            border-radius: 6px;
+            background-color: transparent;
+            text-align: center;
+            font-size: 14px;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            height: 20px;
+            line-height: 20px;
+            margin-top: -10px;
+            outline: none;
+            border: none;
+        }
+    }
+    .message-login {
+        color: #999;
+        font-size: 14px;
+        line-height: 20px;
+        box-sizing: border-box;
+        a {
+            color: @color;
+        }
+    }
+    &>button {
+        margin-top: .6rem;
+        display: block;
+        width: 100%;
+        height: .84rem;
+        border-radius: 4px;
+        background-color: #4cd96f;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        line-height: .84rem;
+        outline: none;
+        border: none;
+        font-size: 16px;
+    }
+    &>a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #999;
+        margin-top: .4rem;
+        outline: none;
+        font-size: 12px;
+    }
+}

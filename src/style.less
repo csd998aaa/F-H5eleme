@@ -1,0 +1,68 @@
+
+.tarBar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .1);
+    background-color: #fff;
+    li {
+        width: 25%;
+        display: inline-block;
+        text-align: center;
+        margin: 2px auto;
+    }
+    a {
+        display: block;
+        height: 100%;
+        text-decoration: none;
+        font-size: 12px;
+        padding: .09rem 0;
+        -webkit-tap-highlight-color:rgba(0,0,0,0); // 取消ios点击时背景颜色
+        i {
+            display: block;
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin: 0 auto ;
+            width: .4rem;
+            height: .4rem;
+        }
+        span {
+            color: #8e8e93;
+            font-size: .2rem;
+            display: block;
+            margin-top: 1px;
+        }
+    } 
+    // 默认taber背景图
+    .bg-img1 {
+        background: url('./assets/images/tarBar1.svg')
+    }
+    .bg-img2 {
+        background: url('./assets/images/tarBar2.svg')
+    }
+    .bg-img3 {
+        background: url('./assets/images/tarBar3.svg')
+    }
+    .bg-img4 {
+        background: url('./assets/images/tarBar4.svg')
+    } 
+    // 点击后的样式
+    .active-navBar {
+        span {
+            color: #0089dc;
+        }
+        .bg-img1 {
+            background: url('./assets/images/tarBar1_Active.svg')
+        }
+        .bg-img2 {
+            background: url('./assets/images/tarBar2_Active.svg')
+        }
+        .bg-img3 {
+            background: url('./assets/images/tarBar3_Active.svg')
+        }
+        .bg-img4 {
+            background: url('./assets/images/tarBar4_Active.svg')
+        }
+    }
+}

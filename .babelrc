@@ -1,0 +1,23 @@
+{
+    "presets": [
+        "es2015",
+        "stage-0",
+        "react"
+    ],
+    "env": {
+        "development": {
+            "presets": [
+                "react-hmre"
+            ]
+        }
+    },
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "antd-mobile",
+                "style": "css"
+            }
+        ]
+    ]
+}
