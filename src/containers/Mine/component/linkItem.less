@@ -1,0 +1,39 @@
+.link-item {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: .5rem;
+    align-items: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #333;
+    border-radius: 0;
+    font-size: .32rem;
+    aside {
+        margin-right: .18rem;
+        i {
+            width: 20px;
+            height: 20px;
+            background-size: 100% 100%;
+            display: block;
+        }
+    }
+    &>div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: .22rem .2rem .22rem 0rem;
+        border-bottom: 1px solid rgba(225, 225, 225, .4);
+        span {
+            width: 14px;
+            height: 14px;
+            display: block;
+            background: url('../../../assets/images/rightBlack.svg') no-repeat;
+            background-size: 100% 100%;
+            transform: rotate(180deg)
+        }
+    }
+    &:active {
+        background-color: linear-gradient(90deg, #0af, #0a71d1)
+    }
+}

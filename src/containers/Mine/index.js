@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { ElemeHeader } from "../../components/ElemeHeader";
+
 import style from './style.less';
 
 import { Category } from "./component/Category";
+import { LinkItem } from './component/LinkItem';
 
 export default class Mine extends Component {
     constructor(props) {
@@ -36,6 +38,17 @@ export default class Mine extends Component {
                 </section>
                 <section>
                     <Category />
+                </section>
+                <section className="list-link">
+                    <LinkItem text='我的地址' icon='address'/>
+                </section>
+                <section  className="list-link">
+                    <LinkItem text='金币商城' icon='star'/>
+                    <LinkItem text='分享拿10元现金' icon='share'/>
+                </section>
+                <section  className="list-link">
+                    <LinkItem text='我的客服' icon='talk'/>
+                    <LinkItem text='下载饿了么APP' icon='download'/>
                 </section>
             </div>
         )
